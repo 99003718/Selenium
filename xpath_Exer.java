@@ -18,5 +18,9 @@ public class xpath_Exer {
 		WebElement w = d.findElement(By.xpath("//*[@id=\"myTable\"]/tr[5]/td[1]"));
 		String s = w.getText();
 		System.out.println(s);
+		
+		WebElement w1= d.findElement(By.xpath("//*[@id=\"myTable\"]/tr[5]/td[2]"));
+		String s1 = w1.getText();
+		System.out.println(s1);
 	}
 }

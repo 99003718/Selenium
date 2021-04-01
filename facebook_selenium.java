@@ -26,8 +26,9 @@ public class facebook_selenium {
 		Select yy = new Select(b.findElement(By.id("year")));
 		yy.selectByValue("1998");//Enter year
 		
-		WebElement radio1 = b.findElement(By.cssSelector("input[value='2']"));
-		radio1.click();//Select Gender
+//		WebElement radio1 = b.findElement(By.cssSelector("input[value='2']"));
+//		radio1.click();//Select Gender
+		b.findElement(By.cssSelector("input[value='2']")).click();
 		
 		Thread.sleep(3000);
 		b.findElement(By.name("websubmit")).click();//Click Sign up
